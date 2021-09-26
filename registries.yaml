@@ -1,5 +1,5 @@
 mirrors:
-  leo1-nuci3:
+  "leo1-nuci3":
     endpoint:
       - "http://leo1-nuci3:5000"
 configs:
