@@ -1,4 +1,3 @@
-# cat /etc/rancher/k3s/registries.yaml 
 mirrors:
   leo-nuci3:
     endpoint:
