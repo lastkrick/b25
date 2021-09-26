@@ -1,0 +1,9 @@
+# cat /etc/rancher/k3s/registries.yaml 
+mirrors:
+  leo-nuci3:
+    endpoint:
+            - "http://leo-nuci3:5000"
+configs:
+  "leo-nuci3:5000":
+    tls:
+      insecure_skip_verify: true
