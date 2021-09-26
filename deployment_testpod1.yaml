@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testdepl1
+  labels:
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: pythontest1
+  template:
+    metadata:
+      labels:
+        app: pythontest1
+    spec:
+      containers:
+      - name: app
+        image: leo-nuci3:5000/pythontest1:latest
+        restart: OnFailure
