@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: leo-nuci3:5000/pythontest1:latest
+        image: leo1-nuci3:5000/pythontest1:latest
         restart: OnFailure
         env:
         - name: NODE_NAME
