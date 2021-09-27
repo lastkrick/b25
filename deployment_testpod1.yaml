@@ -18,3 +18,8 @@ spec:
       - name: app
         image: leo-nuci3:5000/pythontest1:latest
         restart: OnFailure
+        env:
+        - name: NODE_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
