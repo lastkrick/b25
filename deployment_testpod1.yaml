@@ -5,7 +5,7 @@ metadata:
   labels:
     app: pythontest1
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: pythontest1
