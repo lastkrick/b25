@@ -1,0 +1,10 @@
+hosts: rpis
+tasks:
+  - name: update all packages
+    apt:
+      name: "*"
+      state: latest
+      install_recommends: true
+      state: latest
+      update_cache: yes
+  
