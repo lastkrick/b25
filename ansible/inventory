@@ -1,0 +1,11 @@
+[rpis]
+leo1-0[00:100]
+
+[rpis:vars]
+ansible_user=root
+
+[k3s_master]
+leo1-000
+
+[k3s_node]
+leo1-0[01:100]
