@@ -1,0 +1,9 @@
+- hosts: all
+  gather_facts: yes
+  tasks:
+    - name: get loadaverage data
+      command: cat /proc/loadavg
+      register: loadavg
+
+    - debug:
+        msg: "memfree: {{ ansible_memory_mb.nocache.free }} loadavg: {{ loadavg.stdout }}"
